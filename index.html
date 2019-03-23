@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+        <title>Movies</title>
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <label for="title">Pelicula: </label>
+        <input id="title" type="text" placeholder="movie"/>
+
+        <ul id="movies"></ul>
+        
+        
+        <!-- Firebase -->
+        
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+            <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDiE32FEwGA2cPtK51q9oqK8DO9oUzk6Dg",
+                authDomain: "moviesfb-abda3.firebaseapp.com",
+                databaseURL: "https://moviesfb-abda3.firebaseio.com",
+                projectId: "moviesfb-abda3",
+                storageBucket: "moviesfb-abda3.appspot.com",
+                messagingSenderId: "257742760750"
+            };
+            firebase.initializeApp(config);
+            </script>
+            <script src="movies.js"></script>
+</body>
+</html>
