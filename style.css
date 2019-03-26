@@ -2,3 +2,11 @@ body{
     background-color: black;
     color:lightgreen;
 }
+
+li > div {
+    position: absolute;
+    left: 250px;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
